@@ -1,0 +1,2 @@
+$(document).ready(function(){var cookie_consent=localStorage.getItem('cookie-consent');if(cookie_consent===null){}
+var iOS=!!navigator.platform&&/iPad|iPhone|iPod/.test(navigator.platform);var isMac=navigator.platform.indexOf('Mac')>-1;var isWin=navigator.platform.indexOf('Win')>-1;var promo_ios=localStorage.getItem('promo-ios');if(promo_ios===null&&iOS==true){localStorage.setItem('promo-ios',Date.now());$("#iosModal").modal();}});function closeCookieConsent(){$('#cookieConsentBar').addClass('hidden');localStorage.setItem('cookie-consent',Date.now());}
